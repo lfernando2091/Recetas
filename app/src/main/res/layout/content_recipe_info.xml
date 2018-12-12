@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.RecipeInfo"
+    tools:showIn="@layout/activity_recipe_info">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_grey"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Receta"
+            app:fontFamily="sans-serif-smallcaps" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/labelC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label"
+            android:textSize="14sp"
+            app:fontFamily="sans-serif-smallcaps" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/ingredientes"
+            android:layout_below="@+id/labelC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_grey"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Ingredientes"
+            app:fontFamily="sans-serif-smallcaps" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/ingredientesC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ingredientes"
+            android:textSize="14sp"
+            app:fontFamily="sans-serif-smallcaps" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/calorias"
+            android:layout_below="@+id/ingredientesC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_grey"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Calorias"
+            app:fontFamily="sans-serif-smallcaps" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/caloriasC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calorias"
+            android:textSize="14sp"
+            app:fontFamily="sans-serif-smallcaps" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/pesoTatal"
+            android:layout_below="@+id/caloriasC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_grey"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Peso Total"
+            app:fontFamily="sans-serif-smallcaps" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/pesoTatalC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pesoTatal"
+            android:textSize="14sp"
+            app:fontFamily="sans-serif-smallcaps" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
